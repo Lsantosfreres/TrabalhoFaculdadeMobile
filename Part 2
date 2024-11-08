@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Pedidosid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6A5A5"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAE8E8"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="227dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="#4CAF50"
+                android:contentDescription="Voltar"
+                android:src="@android:drawable/ic_menu_revert" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Botão Clientes -->
+            <RadioButton
+                android:id="@+id/radioButtonClientes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#7F7979"
+                android:backgroundTint="#7F7979"
+                android:button="@android:drawable/ic_menu_myplaces"
+                android:buttonTint="#000000"
+                android:gravity="center"
+                android:text="Clientes"
+                android:textColor="#000000" />
+
+
+            <RadioButton
+                android:id="@+id/radioButtonProdutos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#746F6F"
+                android:backgroundTint="#807A7A"
+                android:button="@android:drawable/ic_input_get"
+                android:buttonTint="#000000"
+                android:gravity="center"
+                android:text="Produtos"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+
+        <SearchView
+            android:layout_width="932dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#6D6A6A"
+            android:iconifiedByDefault="false"
+            android:queryHint="Pesquisar" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_width="918dp"
+                        android:layout_height="445dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="#B8B5B5"
+                        android:elevation="4dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="space_between"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:contentDescription="Ícone de usuário"
+                                android:src="@android:drawable/ic_menu_my_calendar" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingStart="8dp"
+                                android:text="Vito"
+                                android:textColor="#000"
+                                android:textSize="16sp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00/00/0000"
+                                android:textColor="#000" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="NomeProduto"
+                            android:textColor="#000" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="#767575"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="206dp"
+                                android:layout_height="match_parent"
+                                android:background="#C9C5C5"
+                                android:contentDescription="Imagem do Produto"
+                                android:src="@drawable/albedobase_xl_imagem_tenis_3" />
+
+                            <ImageView
+                                android:layout_width="205dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="8dp"
+                                android:background="#CBC7C7"
+                                android:contentDescription="Imagem do Produto"
+                                android:src="@drawable/albedobase_xl_imagem_tenis_3" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="507dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#B8B5B5"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="space_between"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="Ícone de usuário"
+                            android:src="@android:drawable/ic_menu_my_calendar" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="8dp"
+                            android:text="Vito"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00/00/0000"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="NomeProduto"
+                        android:textColor="#000" />
+
+
+                    <LinearLayout
+                        android:layout_width="892dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#777676"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="206dp"
+                            android:layout_height="match_parent"
+                            android:background="#CBC7C7"
+                            android:contentDescription="Imagem do Produto"
+                            android:src="@drawable/albedobase_xl_imagem_tenis_3" />
+
+                        <ImageView
+                            android:layout_width="205dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:background="#CDC9C9"
+                            android:contentDescription="Imagem do Produto"
+                            android:src="@drawable/albedobase_xl_imagem_tenis_3" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="918dp"
+                    android:layout_height="445dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#B8B5B5"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="space_between"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="Ícone de usuário"
+                            android:src="@android:drawable/ic_menu_my_calendar" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="8dp"
+                            android:text="Vito"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00/00/0000"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="133dp"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="8dp"
+                        android:text="NomeProduto"
+                        android:textColor="#000" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#787777"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="206dp"
+                            android:layout_height="match_parent"
+                            android:background="#D1CDCD"
+                            android:contentDescription="Imagem do Produto"
+                            android:src="@drawable/albedobase_xl_imagem_tenis_3" />
+
+                        <ImageView
+                            android:layout_width="205dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:background="#CFCBCB"
+                            android:contentDescription="Imagem do Produto"
+                            android:src="@drawable/albedobase_xl_imagem_tenis_3" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
