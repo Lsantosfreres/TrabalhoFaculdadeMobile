@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#D3D3D3">
+
+        <!-- Barra de navegação com botão de voltar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start|center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Voltar"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_menu_revert" />
+        </LinearLayout>
+
+        <!-- Campo de pesquisa -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_search"
+                android:contentDescription="Pesquisar"
+                android:tint="#000" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="Sapatos"
+                android:background="@null"
+                android:textColorHint="#A9A9A9"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <!-- Grade de produtos -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="445dp"
+            android:layout_marginTop="16dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:padding="8dp">
+
+            <!-- Imagens de produtos (Exemplo de produto 1) -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="121dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:contentDescription="Sapato 1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/albedobase_xl_imagem_tenis_3" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="123dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:contentDescription="Sapato 2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/albedobase_xl_imagem_tenis_3" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="127dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:contentDescription="Sapato 3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/albedobase_xl_imagem_tenis_3" />
+
+            <!-- Exemplo de mais produtos -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="121dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:contentDescription="Sapato 4"
+                android:scaleType="centerCrop"
+                android:src="@drawable/albedobase_xl_imagem_tenis_3" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="121dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:contentDescription="Sapato 5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/albedobase_xl_imagem_tenis_3" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="124dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:contentDescription="Sapato 6"
+                android:scaleType="centerCrop"
+                android:src="@drawable/albedobase_xl_imagem_tenis_3" />
+        </GridLayout>
+    </LinearLayout>
